@@ -22,3 +22,7 @@ components that have the btn class name.
 .action-bar {
   color: #3f7cff;
 }
+
+selected-tab-text-color {
+  color: #3f7cff;
+}
