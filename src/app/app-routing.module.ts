@@ -2,10 +2,10 @@ import { NgModule } from "@angular/core";
 import { Routes } from "@angular/router";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 
-import { HomeComponent } from "./home/home.component";
-import { ProfileComponent } from "./profile/profile.component";
-import { GroupsComponent } from "./groups/groups.component";
-import { DashboardComponent } from "./dashboard/dashboard.component";
+import { HomeComponent } from "../home/home.component";
+import { ProfileComponent } from "../profile/profile.component";
+import { GroupsComponent } from "../groups/groups.component";
+import { DashboardComponent } from "../dashboard/dashboard.component";
 
 const routes: Routes = [
     { path: "", redirectTo: "/(homeTab:home//dashTab:dashboard//groupsTab:groups//profileTab:profile)", pathMatch: "full" },
