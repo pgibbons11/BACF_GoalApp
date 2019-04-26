@@ -1,0 +1,15 @@
+<ActionBar class="action-bar">
+  <Label class="action-bar-title" text="Settings"></Label>
+</ActionBar>
+
+<ListView [items]="settings" class="list-group">
+  <ng-template let-setting="item" let-i="index">
+    <StackLayout orientation="horizontal" class="list-group-item">
+      <Label [text]="setting.name" android:class="label-item"></Label>
+    </StackLayout>
+  </ng-template>
+</ListView>
+
+<GridLayout verticalAlignment="bottom">
+  <Button class="btn btn-primary" text="Back" (tap)="goBack()"></Button>
+</GridLayout>

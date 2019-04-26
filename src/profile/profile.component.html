@@ -2,6 +2,12 @@
     <Label class="action-bar-title" text="Profile"></Label>
 </ActionBar>
 
-<StackLayout class="page">
-    <Label text="Profile"></Label>
+<StackLayout class="page" orientation="vertical" height="300">
+    <Image class="profilePic" src="res://profile"></Image>
+    <Label class="profileLabel" text="Patrick Gibbons" verticalAlignment="center" horizontalAlignment="center"></Label>
+    <Label class="ba" text="Mega Badass" verticalAlignment="center" horizontalAlignment="center"></Label>
+</StackLayout>
+
+<StackLayout class="page" height="75" verticalAlignment="top">
+    <Button class="settings-btn" [nsRouterLink]="['../settings']" text="S" image="res://settings" horizontalAlignment="right" width="75" height="75"></Button>
 </StackLayout>
