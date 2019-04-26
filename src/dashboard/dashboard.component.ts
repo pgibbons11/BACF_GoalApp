@@ -44,7 +44,7 @@ export class DashboardComponent implements OnInit {
         //(<ScrollView>args.object).scrollToHorizontalOffset(50, true);
     }
 
-    onScrollEnded(args: ScrollEventData) {
-        (<ScrollView>args.object).scrollToIndex(2, true);
-    }
+    // onScrollEnded(args: ScrollEventData) {
+    //     (<ScrollView>args.object).scrollToIndex(2, true);
+    // }
 }
