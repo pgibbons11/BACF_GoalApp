@@ -6,13 +6,15 @@ import { HomeComponent } from "../home/home.component";
 import { ProfileComponent } from "../profile/profile.component";
 import { GroupsComponent } from "../groups/groups.component";
 import { DashboardComponent } from "../dashboard/dashboard.component";
+import { SettingsComponent } from "../settings/settings.component";
 
 const routes: Routes = [
     { path: "", redirectTo: "/(homeTab:home//dashTab:dashboard//groupsTab:groups//profileTab:profile)", pathMatch: "full" },
     { path: "home", component: HomeComponent, outlet: "homeTab"},
     { path: "dashboard", component: DashboardComponent, outlet: "dashTab"},
     { path: "groups", component: GroupsComponent, outlet: "groupsTab"},
-    { path: "profile", component: ProfileComponent, outlet: "profileTab"}
+    { path: "profile", component: ProfileComponent, outlet: "profileTab"},
+    { path: "settings", component: SettingsComponent, outlet: "profileTab" }
 ];
 
 @NgModule({

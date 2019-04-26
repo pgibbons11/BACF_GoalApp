@@ -1,7 +1,11 @@
 <ActionBar class="action-bar">
-    <Label class="action-bar-title" text="Dashboard"></Label>
+  <Label class="action-bar-title" text="Dashboard"></Label>
 </ActionBar>
 
-<StackLayout class="page">
-    <Label text="Dashboard"></Label>
-</StackLayout>
+<ScrollView orientation="horizontal" (scroll)="onScroll($event)">
+  <StackLayout class="list-group" orientation="horizontal" height="300">
+    <GridLayout *ngFor="let view of views" id="{{ 'id' + view.id }}" (tap)="onTap($event)" rows="*, auto" columns="300" class="list-group-item">
+      <Label class="label-item" [text]="view.name"></Label>
+    </GridLayout>
+  </StackLayout>
+</ScrollView>

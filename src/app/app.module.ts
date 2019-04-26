@@ -8,6 +8,7 @@ import { HomeComponent } from "../home/home.component";
 import { ProfileComponent } from "../profile/profile.component";
 import { GroupsComponent } from "../groups/groups.component";
 import { DashboardComponent } from "../dashboard/dashboard.component";
+import { SettingsComponent } from "../settings/settings.component";
 
 @NgModule({
     bootstrap: [
@@ -22,7 +23,8 @@ import { DashboardComponent } from "../dashboard/dashboard.component";
         HomeComponent,
         ProfileComponent,
         GroupsComponent,
-        DashboardComponent
+        DashboardComponent,
+        SettingsComponent
     ],
     schemas: [
         NO_ERRORS_SCHEMA

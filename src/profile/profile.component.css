@@ -1,0 +1,25 @@
+.profilePic {
+  border-color: #3f7cff;
+  border-width: 2;
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+}
+
+.profileLabel {
+  padding: 30px;
+}
+
+/* .settings-btn {
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 1;
+}
+
+.settings-btn:active {
+  background-color: lightgrey;
+} */
+
+.ba {
+  color: red;
+}
